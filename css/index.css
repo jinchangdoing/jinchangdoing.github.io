@@ -20,8 +20,8 @@ header{
 }
 #subheading{
 	color:#130873;
-	padding-top:100px;
-	padding-left:50px;
+	padding-top:80px;
+	padding-left:80px;
 	width:400px;
 	word-wrap:normal;
 	font-weight:bold;
@@ -29,6 +29,7 @@ header{
 	float:left;
 }
 nav{
+	clear:both;
 	float:left;
 	background-color:#FFCA73;
 	border-color:#FF9F00;
