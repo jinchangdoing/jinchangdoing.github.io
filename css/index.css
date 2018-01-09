@@ -12,19 +12,21 @@ header{
 #title{
 	color:#610659;
 	padding-top:40px;
-	padding-left:200px;
-	font-size:48px;
+	padding-left:160px;
+	font-size:84px;
 	font-weight:bold;
 	font-family:"Arial Black", Gadget, sans-serif;
+	float:left;
 }
 #subheading{
 	color:#130873;
-	padding-top:10px;
-	padding-left:250px;
+	padding-top:100px;
+	padding-left:50px;
 	width:400px;
 	word-wrap:normal;
 	font-weight:bold;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float:left;
 }
 nav{
 	float:left;
