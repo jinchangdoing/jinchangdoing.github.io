@@ -7,12 +7,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>THMUA-卜.</title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/tinyColorPicker/1.1.1/jqColorPicker.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#titlecolor").colorPicker({
+                renderCallback: function(colors, mode){
+                    $("header").css("background-color", $("#titlecolor").val());
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="main">
     <header>
         <div id="title">THMUA</div>
         <div id="subheading">MUA is short for Modification Ultraman Alliance.Every ultraman comes here should feel modification, learn modification and become modification.</div>
+        <input class="color" id="titlecolor" placeholder="点击选择背景颜色">
      </header>
      <nav>
      </nav>
