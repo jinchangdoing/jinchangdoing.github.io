@@ -7,31 +7,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>THMUA-卜.</title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/tinyColorPicker/1.1.1/jqColorPicker.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#titlecolor").colorPicker({
-                renderCallback: function(colors, mode){
-                    $("header").css("background-color", $("#titlecolor").val());
-                }
-            });
-        });
-    </script>
 </head>
 <body>
 <div id="main">
     <header>
         <div id="title">THMUA</div>
         <div id="subheading">MUA is short for Modification Ultraman Alliance.Every ultraman comes here should feel modification, learn modification and become modification.</div>
-        <input class="color" id="titlecolor" placeholder="点击选择背景颜色">
      </header>
      <nav>
+     	<ul>
+        	<li><a href="javascript:ToPart('pages/IndexPage.html')">首页/Index</a></li>
+        	<li><a href="javascript:ToPart('pages/THtools.html')">东方正作辅助工具/THtools</a></li>
+            <li><a href="javascript:ToPart('pages/MUAworks.html')">东方魔改作品/MUAworks</a></li>
+            <li><a href="javascript:ToPart('pages/OtherTools.html')">其他游戏辅助工具/OtherGameTools</a></li>
+        </ul>
      </nav>
   <section>
-     </section>
-  <aside>
+  <iframe id="ins" frameborder="0" src="pages/IndexPage.html" width="1000px" height="auto" style="min-width:1000px;" onload="changeFrameHeight()"></iframe>
+<script>
+function changeFrameHeight(){
+    var ifm= document.getElementById("ins"); 
+    var Height=document.documentElement.clientHeight-300;
+	ifm.height=Height>200?Height:200;
+	document.getElementById("asideBar").style.height=ifm.height+"px";
+}
+window.onresize=function(){  
+     changeFrameHeight();  
+} 
+function ToPart(link) {
+    document.getElementById('ins').src=link
+}
+</script>
+  </section>
+  <aside id="asideBar">
+  这里放成员列表与联系方式
   </aside>
+  <script></script>
   <footer>
   </footer>
 </div>
