@@ -9,21 +9,6 @@
     <link type="text/css" rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-<div id="main">
-    <header>
-        <div id="title">THMUA</div>
-        <div id="subheading">MUA is short for Modification Ultraman Alliance.Every ultraman comes here should feel modification, learn modification and become modification.</div>
-     </header>
-     <nav>
-     	<ul>
-        	<li><a href="javascript:ToPart('pages/IndexPage.html')">首页/Index</a></li>
-        	<li><a href="javascript:ToPart('pages/THtools.html')">东方正作辅助工具/THtools</a></li>
-            <li><a href="javascript:ToPart('pages/MUAworks.html')">东方魔改作品/MUAworks</a></li>
-            <li><a href="javascript:ToPart('pages/OtherTools.html')">其他游戏辅助工具/OtherGameTools</a></li>
-        </ul>
-     </nav>
-  <section>
-  <iframe id="ins" frameborder="0" src="pages/IndexPage.html" width="1000px" height="auto" style="min-width:1000px;" onload="changeFrameHeight()"></iframe>
 <script>
 function changeFrameHeight(){
     var ifm= document.getElementById("ins"); 
@@ -40,6 +25,21 @@ function ToPart(link) {
 	changeFrameHeight();
 }
 </script>
+<div id="main">
+    <header>
+        <div id="title">THMUA</div>
+        <div id="subheading">MUA is short for Modification Ultraman Alliance.Every ultraman comes here should feel modification, learn modification and become modification.</div>
+     </header>
+     <nav>
+     	<ul>
+        	<li><a href="javascript:ToPart('pages/IndexPage.html')">首页/Index</a></li>
+        	<li><a href="javascript:ToPart('pages/THtools.html')">东方正作辅助工具/THtools</a></li>
+            <li><a href="javascript:ToPart('pages/MUAworks.html')">东方魔改作品/MUAworks</a></li>
+            <li><a href="javascript:ToPart('pages/OtherTools.html')">其他游戏辅助工具/OtherGameTools</a></li>
+        </ul>
+     </nav>
+  <section>
+  <iframe id="ins" frameborder="0" src="pages/IndexPage.html" width="1000px" height="auto" style="min-width:1000px;" onload="changeFrameHeight()"></iframe>
   </section>
   <aside id="asideBar">
   这里放成员列表与联系方式
