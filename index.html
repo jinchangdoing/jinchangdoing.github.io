@@ -29,13 +29,15 @@ function changeFrameHeight(){
     var ifm= document.getElementById("ins"); 
     var Height=document.documentElement.clientHeight-300;
 	ifm.height=Height>200?Height:200;
-	document.getElementById("asideBar").style.height=ifm.height+"px";
+	document.getElementById("asideBar").style.height=(ifm.height-2)+"px";
+	ifm.focus();
 }
 window.onresize=function(){  
      changeFrameHeight();  
 } 
 function ToPart(link) {
-    document.getElementById('ins').src=link
+    document.getElementById('ins').src=link;
+	changeFrameHeight();
 }
 </script>
   </section>
